@@ -43,7 +43,7 @@
     .container{
         @include container;
     }
-    
+    ::selection{background: $siteColor;color: $white;}
     main{
         header{
             // position: absolute;
@@ -235,6 +235,11 @@
                                   font-size: 1rem;
                                   text-align: center;
                                   i{font-size: 2rem;}
+                                  span{
+                                    color: $text2;
+                                    font-weight: bolder;
+                                    letter-spacing: 1px;
+                                  }
                                   &:nth-child(1){
                                       font-weight: bold;
                                    }
@@ -258,4 +263,15 @@
             }
         }
         //--end--here---//
+        //-graph--section---//
+        .Graph_wrapper{
+            .Graph_content{
+                @include flex;
+                justify-content: space-around;
+                .G_cnt_commn{
+                    width: 48%;
+                }
+            }
+        }
+        // ---end---here--//
     }
