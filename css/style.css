@@ -8,7 +8,7 @@
 body {
   font-size: 14px;
   color: #2c3e50;
-  background: #f9fafb;
+  background: #fff;
   font-family: 'Gotham Pro Regular';
 }
 
@@ -64,8 +64,9 @@ main header nav {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main header nav .left_item {
@@ -78,6 +79,8 @@ main header nav .left_item a {
 
 main header nav .left_item a h2 {
   font-size: 3em;
+  color: #f9fafb;
+  font-family: 'Choplin Medium';
 }
 
 main header nav .left_item a h2 span {
@@ -100,18 +103,259 @@ main header nav .right_item ul {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 main header nav .right_item ul li {
   list-style-type: none;
+  margin: 0 .8rem;
 }
 
 main header nav .right_item ul li a {
   text-transform: capitalize;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #fff;
   text-decoration: none;
+  padding: .6rem 1.3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main header nav .right_item ul li a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: .88;
+}
+
+main .Banner_wrapper {
+  background: #1F4E5F;
+  padding: 2rem 0 0;
+}
+
+main .Banner_wrapper .banner_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .Banner_wrapper .banner_content .Left_cnt01 blockquote {
+  background: #24586B;
+  -webkit-box-shadow: 5px 6px 5px 5px #173C49;
+          box-shadow: 5px 6px 5px 5px #173C49;
+  padding: 2rem 2rem 3rem;
+  border-radius: 5px;
+}
+
+main .Banner_wrapper .banner_content .Left_cnt01 blockquote h1 {
+  text-transform: capitalize;
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 2.4em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+main .Banner_wrapper .banner_content .Left_cnt01 blockquote p {
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: .5px;
+  word-spacing: 1px;
+  padding: 1rem 0 2rem;
+  line-height: 1.6;
+}
+
+main .Banner_wrapper .banner_content .Left_cnt01 blockquote .inp_wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .Banner_wrapper .banner_content .Left_cnt01 blockquote .inp_wrp label {
+  width: 100%;
+}
+
+main .Banner_wrapper .banner_content .Left_cnt01 blockquote .inp_wrp label .inpt {
+  padding: 1rem .5rem;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #607D8B;
+}
+
+main .Banner_wrapper .banner_content .Left_cnt01 blockquote .inp_wrp label .submit {
+  padding: 1rem .5rem;
+  -webkit-transform: translate(-10px, 0px);
+          transform: translate(-10px, 0px);
+  height: 47px;
+  /* border: 1px solid #FFC107; */
+  color: #fff;
+  background: #f5a91d;
+  outline: none;
+  font-size: 1rem;
+  /* border-radius: 5px; */
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+}
+
+main .Banner_wrapper .banner_content .Right_cnt01 {
+  text-align: end;
+}
+
+main .Banner_wrapper .banner_content .Right_cnt01 figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 63%;
+  -webkit-filter: hue-rotate(-42deg);
+          filter: hue-rotate(-42deg);
+  -webkit-animation: imageanime 2.4s linear infinite;
+          animation: imageanime 2.4s linear infinite;
+}
+
+@-webkit-keyframes imageanime {
+  0%, 100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    -webkit-filter: drop-shadow(2px 4px 6px black);
+            filter: drop-shadow(2px 4px 6px black);
+  }
+}
+
+@keyframes imageanime {
+  0%, 100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    -webkit-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+    -webkit-filter: drop-shadow(2px 4px 6px black);
+            filter: drop-shadow(2px 4px 6px black);
+  }
+}
+
+main .Banner_wrapper .banner_content .bnr_cmn02 {
+  width: 48%;
+}
+
+main .Banner_wrapper .svg-wrp {
+  height: 215px;
+  width: 100%;
+  background: url(../image/wave2.png) no-repeat;
+  background-size: cover;
+}
+
+main .Bit-Price_wrapper {
+  margin: 3rem 0 1rem;
+  padding: 4rem 0 0;
+}
+
+main .Bit-Price_wrapper .top_icon_wrp {
+  width: 100%;
+  text-align: center;
+}
+
+main .Bit-Price_wrapper .top_icon_wrp a i {
+  font-size: 1rem;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 {
+  width: 90%;
+  background: #E9E9E9;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: initial;
+  background: #fff;
+  -webkit-box-shadow: 0 3px 6px 1px #0000004f;
+          box-shadow: 0 3px 6px 1px #0000004f;
+  border-bottom: 5px solid #1f4e5f;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 table thead {
+  background: #1F4E5F;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 table thead th {
+  padding: 1.2rem .5rem;
+  color: #fff;
+  font-size: 1.4em;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 table tbody tr:nth-child(even) {
+  background: #9993;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 table tbody tr td {
+  padding: 1rem .5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 table tbody tr td i {
+  font-size: 2rem;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 table tbody tr td:nth-child(1) {
+  font-weight: bold;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 table tbody tr td .bt_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 table tbody tr td .bt_txt img {
+  max-width: 32px;
+}
+
+main .Bit-Price_wrapper .Bit-content .child_cnt2 table tbody tr td .bt_txt p {
+  font-size: 1rem;
+  margin: 0 0 0 1rem;
 }
 /*# sourceMappingURL=style.css.map */
