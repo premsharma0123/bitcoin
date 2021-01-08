@@ -1040,6 +1040,22 @@
 
 // -----end---here---------admin---page...=====//
 
+//-----------user-----dashboad-----------=====///
+a.user1 {
+    border-radius: 50%;
+    padding: .9rem 1.1rem!important;
+    box-shadow: 0 0 3px 1px #fff;
+    transition: $transition;
+    &:active{
+        transition: $transition;
+        box-shadow: 0 0 5px 2px #fff;
+        // border: 1px solid #fff;
+    }
+}
+//-----------user------dashboard--------end---here----//
+
+
+
 
 
 //----multi---css////---sectionn-----//

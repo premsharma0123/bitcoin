@@ -1351,6 +1351,22 @@ main .BT-top a i {
   transition: all 0.3s ease-in-out;
 }
 
+a.user1 {
+  border-radius: 50%;
+  padding: 0.9rem 1.1rem !important;
+  -webkit-box-shadow: 0 0 3px 1px #fff;
+          box-shadow: 0 0 3px 1px #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a.user1:active {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 5px 2px #fff;
+          box-shadow: 0 0 5px 2px #fff;
+}
+
 @media only screen and (max-width: 767px) {
   .Login_wrp .user_options-unregistered {
     width: 50%;
