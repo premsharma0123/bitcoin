@@ -1351,7 +1351,7 @@ main .BT-top a i {
   transition: all 0.3s ease-in-out;
 }
 
-a.user1 {
+#Userdashboard_wrapper a.user1 {
   border-radius: 50%;
   padding: 0.9rem 1.1rem !important;
   -webkit-box-shadow: 0 0 3px 1px #fff;
@@ -1360,11 +1360,106 @@ a.user1 {
   transition: all 0.3s ease-in-out;
 }
 
-a.user1:active {
+#Userdashboard_wrapper a.user1:active {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-box-shadow: 0 0 5px 2px #fff;
           box-shadow: 0 0 5px 2px #fff;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 6rem 0 2rem;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 5px;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .dash_heading h2 {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .Li-cmn03 {
+  width: 48%;
+  background: #eee;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .Li-cmn03 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .6rem .5rem;
+  margin: .3rem 0;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .Li-cmn03 p i {
+  color: #F5A91D;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .Li-cmn03 p:nth-child(odd) {
+  background: #fff;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .Li-cmn03 h3 {
+  padding: 0 0 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .Li-cmn03 .balance p strong {
+  font-size: 3rem;
+  color: #F5A91D;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .li03 {
+  width: 100% !important;
+  height: auto;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .li03 figure {
+  text-align: center;
+}
+
+#Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .li03 figure img {
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 767px) {

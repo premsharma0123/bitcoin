@@ -1041,17 +1041,91 @@
 // -----end---here---------admin---page...=====//
 
 //-----------user-----dashboad-----------=====///
-a.user1 {
-    border-radius: 50%;
-    padding: .9rem 1.1rem!important;
-    box-shadow: 0 0 3px 1px #fff;
-    transition: $transition;
-    &:active{
-        transition: $transition;
-        box-shadow: 0 0 5px 2px #fff;
-        // border: 1px solid #fff;
-    }
+
+
+#Userdashboard_wrapper{
+        a.user1 {
+            border-radius: 50%;
+            padding: .9rem 1.1rem!important;
+            box-shadow: 0 0 3px 1px #fff;
+            transition: $transition;
+            &:active{
+                transition: $transition;
+                box-shadow: 0 0 5px 2px #fff;
+                // border: 1px solid #fff;
+            }
+        }
+
+        .User_main_Wrapper{
+            .User_content {
+                width: 80%;
+                margin: 0 auto;
+                padding: 6rem 0 2rem;
+                .child_user_cnt {
+                    padding: 2rem;
+                    background: #fff;
+                    border-radius: 5px;
+                    .dash_heading{
+                        h2{
+                            font-size: 1.6rem;
+                            text-transform: capitalize;
+                        }
+                    }
+                    .User_unorder{
+                        @include flex;
+                        justify-content: space-between;
+                        .Li-cmn03{
+                            width: 48%;
+                            // height: 200px;
+                            background: #eee;
+                            margin: 1rem 0;
+                            padding: 1rem;
+                            border-radius: 5px;
+                            list-style-type: $none;
+                            p{
+                               @include flex;
+                               justify-content: $between;
+                               padding: .6rem .5rem;
+                               margin: .3rem 0;
+                               i{
+                                   color: $text2;
+                               }
+                               &:nth-child(odd){
+                                   background: #fff;
+                               }
+                            }
+                            h3{
+                                padding: 0 0 1rem;
+                                font-size: 1.4rem;
+                                line-height: 1.5;
+                                word-break: break-all;
+                            }
+                            .balance{
+                                p{
+                                    strong{
+                                        font-size: 3rem;
+                                        color: $text2;
+                                    }
+                                }
+                            }
+                        }
+                        .li03{
+                            width: 100%!important;
+                            height:auto;
+                            figure{
+                                text-align: center;
+                                img{
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+      }
 }
+
+
 //-----------user------dashboard--------end---here----//
 
 
