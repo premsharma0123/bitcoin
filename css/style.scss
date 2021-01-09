@@ -91,6 +91,12 @@
                         }
                     }
                 }
+                .user_Wrp{
+                    a{
+                        text-decoration: $none;
+                        color: $white;
+                    }
+                }
             }
         }
         // ---banner----//
@@ -1029,6 +1035,10 @@
                             &:hover{
                                 box-shadow: 0 0px 5px 1px #1f4e5f28;
                             }
+                        }
+                        .flx{
+                         @include flex;
+                         flex-wrap: nowrap;
                         }
                       } 
                       &:hover{

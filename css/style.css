@@ -139,6 +139,11 @@ main header nav .right_item ul li a:hover {
   opacity: .88;
 }
 
+main header nav .user_Wrp a {
+  text-decoration: none;
+  color: #fff;
+}
+
 main .Banner_wrapper {
   background: #1F4E5F;
   padding: 2rem 0 0;
@@ -1349,6 +1354,22 @@ main .BT-top a i {
           box-shadow: 0 0px 5px 1px #1f4e5f28;
 }
 
+.Admin_wrapper .Admin_table .Table_content .child_Table table tbody tr td .flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .Admin_wrapper .Admin_table .Table_content .child_Table table tbody tr:hover {
   background: #607d8b3d;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1607,6 +1628,10 @@ main .BT-top a i {
   main .BT-top a {
     padding: .9rem 1.2rem;
   }
+  .user_Wrp {
+    padding: 0 3rem 0 0;
+    margin-right: 5px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -1658,6 +1683,26 @@ main .BT-top a i {
   main footer .footer_content .Ft_cmn06 {
     width: 30%;
     margin: .5rem .4rem;
+  }
+  .Admin_wrapper .Admin_table .Table_content {
+    width: 100%;
+    padding: 7rem 0 0;
+  }
+  .Admin_wrapper .Admin_table .Table_content .child_Table {
+    padding: 2rem;
+    border-radius: 5px;
+  }
+  .flx {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  #Userdashboard_wrapper .User_main_Wrapper .User_content {
+    padding: 6rem 0 2rem;
+    width: 100%;
+  }
+  #Userdashboard_wrapper .User_main_Wrapper .User_content {
+    padding: 5rem 0 2rem;
+    width: 100%;
   }
 }
 
@@ -1771,6 +1816,33 @@ main .BT-top a i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .Admin_wrapper .Admin_table .Table_content {
+    width: 100%;
+    padding: 7rem 0 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .Admin_wrapper .Admin_table .Table_content .child_Table {
+    padding: 1rem;
+    background: #eee;
+    border-radius: 5px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .Admin_wrapper .Admin_table .Table_content .child_Table table {
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  #Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .Li-cmn03 {
+    width: 100%;
+  }
+  #Userdashboard_wrapper .User_main_Wrapper .User_content {
+    padding: 4rem 0 2rem;
+    width: 100%;
+  }
+  #Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .Li-cmn03 .balance p strong {
+    font-size: 2rem;
   }
 }
 
@@ -1919,6 +1991,22 @@ main .BT-top a i {
   .main-bar.activefile {
     top: 31px !important;
   }
+  .Admin_wrapper .Admin_table .Table_content {
+    width: 100%;
+    padding: 4rem 0 0;
+  }
+  .Admin_wrapper .Admin_table .Table_content .child_Table {
+    padding: 1rem;
+    background: #eee;
+    border-radius: 5px;
+  }
+  .Admin_wrapper .Admin_table .Table_content .child_Table table tbody tr td i.fas.fa-pencil-alt {
+    margin: 0px 9px 0 1rem;
+  }
+  .Admin_wrapper .Admin_table .Table_content .child_Table table thead th {
+    padding: 1.2rem .5rem;
+    font-size: 1.3em;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -2001,6 +2089,15 @@ main .BT-top a i {
     padding: .7rem 0;
     border-bottom: 1px solid #eeeeee29;
   }
+  .Admin_wrapper .Admin_table .Table_content {
+    padding: 3rem 0 0;
+  }
+  #Userdashboard_wrapper a.user1 {
+    padding: 0.7rem .9rem !important;
+  }
+  .Admin_wrapper .myHeader {
+    margin: .6rem 0 0;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -2040,6 +2137,12 @@ main .BT-top a i {
   .myHeader ul li {
     padding: .5rem 0;
     border-bottom: 1px solid #eeeeee29;
+  }
+  .Admin_wrapper .Admin_table .Table_content {
+    padding: 2rem 0 0;
+  }
+  #Userdashboard_wrapper a.user1 {
+    padding: 0.6rem .8rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

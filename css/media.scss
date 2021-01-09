@@ -121,6 +121,10 @@ main .Trade_Wrappper .Trade_Content_wrp .trade_cmn05 h2 {
 main .BT-top a {
     padding: .9rem 1.2rem;
 }
+.user_Wrp {
+    padding: 0 3rem 0 0;
+    margin-right: 5px;
+}
 
 }
 
@@ -174,6 +178,25 @@ main .BT-top a {
     main footer .footer_content .Ft_cmn06 {
         width: 30%;
         margin: .5rem .4rem;
+    }
+    .Admin_wrapper .Admin_table .Table_content {
+        width: 100%;
+        padding: 7rem 0 0;
+    }
+    .Admin_wrapper .Admin_table .Table_content .child_Table {
+        padding: 2rem;
+        border-radius: 5px;
+    }
+    .flx{
+        justify-content: space-around!important;
+    }
+    #Userdashboard_wrapper .User_main_Wrapper .User_content {   
+        padding: 6rem 0 2rem;
+        width: 100%;
+    }
+    #Userdashboard_wrapper .User_main_Wrapper .User_content {
+        padding: 5rem 0 2rem;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 767px){
@@ -287,6 +310,33 @@ main .BT-top a {
     }
     main footer .footer_content{
         justify-content: center;
+    }
+    .Admin_wrapper .Admin_table .Table_content {
+        width: 100%;
+        padding: 7rem 0 0;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .Admin_wrapper .Admin_table .Table_content .child_Table {
+        padding: 1rem;
+        background: #eee;
+        border-radius: 5px;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        table{
+            overflow-y: hidden;
+            overflow-x: scroll;
+        }
+    }
+    #Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .Li-cmn03 {
+        width: 100%;
+    }
+    #Userdashboard_wrapper .User_main_Wrapper .User_content {
+        padding: 4rem 0 2rem;
+        width: 100%;
+    }
+    #Userdashboard_wrapper .User_main_Wrapper .User_content .child_user_cnt .User_unorder .Li-cmn03 .balance p strong {
+        font-size: 2rem;
     }
 }
 @media only screen and (max-width: 576px){
@@ -422,6 +472,22 @@ main .BT-top a {
     .main-bar.activefile {
         top: 31px !important;
     }
+    .Admin_wrapper .Admin_table .Table_content {
+        width: 100%;
+        padding: 4rem 0 0;
+    }
+    .Admin_wrapper .Admin_table .Table_content .child_Table {
+        padding: 1rem;
+        background: #eee;
+        border-radius: 5px;
+    }
+    .Admin_wrapper .Admin_table .Table_content .child_Table table tbody tr td i.fas.fa-pencil-alt {
+        margin: 0px 9px 0 1rem;
+    }
+    .Admin_wrapper .Admin_table .Table_content .child_Table table thead th {
+        padding: 1.2rem .5rem;
+        font-size: 1.3em;
+    }
 }
 @media only screen and (max-width: 480px){
     
@@ -504,6 +570,15 @@ main .BT-top a {
         padding: .7rem 0;
         border-bottom: 1px solid #eeeeee29;
     }
+    .Admin_wrapper .Admin_table .Table_content {
+        padding: 3rem 0 0;
+    }
+    #Userdashboard_wrapper a.user1 {
+        padding: 0.7rem .9rem !important;
+    }
+    .Admin_wrapper .myHeader{
+        margin: .6rem 0 0 ;
+    }
     //-----login---end--here---//
 }
 @media only screen and (max-width: 375px){
@@ -542,5 +617,14 @@ main .BT-top a {
     .myHeader ul li {
         padding: .5rem 0;
         border-bottom: 1px solid #eeeeee29;
+    }
+    .Admin_wrapper .Admin_table .Table_content {
+        padding: 2rem 0 0;
+    }
+    #Userdashboard_wrapper a.user1 {
+        padding: 0.6rem .8rem !important;
+    }
+    .main-bar {
+        right: 20px;
     }
 }
