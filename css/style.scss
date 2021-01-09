@@ -74,7 +74,7 @@
                         justify-content: flex-end;
                         li{
                             list-style-type: $none;
-                             margin: 0 .8rem;
+                             margin: 0 .4rem;
                             a{
                                 text-transform: $cap;
                                 font-size: 1.2em;
@@ -315,6 +315,11 @@
                         text-decoration: none;
                         font-size: 1.2rem;
                     }
+                    figure{
+                        img{
+                            max-width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -450,7 +455,7 @@
                        p{
                            font-size: 1.2em;
                            text-transform: $cap;
-                           line-height: 1px;
+                           line-height: 1.5;
                            padding: .5rem 0;
                            color:$white;
                        }
@@ -1093,6 +1098,13 @@
                                &:nth-child(odd){
                                    background: #fff;
                                }
+                               i,strong,span,b{
+                                   margin:.5rem .5rem;
+                               }
+                               span{
+                                   color: #ff5722;
+                                   font-weight: bold;
+                               }
                             }
                             h3{
                                 padding: 0 0 1rem;
@@ -1128,10 +1140,7 @@
 
 //-----------user------dashboard--------end---here----//
 
-
-
-
-
+.main-bar{display: none}
 //----multi---css////---sectionn-----//
 //----***********------///////////
 
